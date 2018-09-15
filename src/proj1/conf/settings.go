@@ -7,14 +7,13 @@ import (
 	"time"
 )
 
-/*
 const (
-	SITE_NAME      string = "LocTalk"
-	DEFAULT_LIMIT  int    = 10
-	MAX_LIMIT      int    = 1000
-	MAX_POST_CHARS int    = 1000
+	// A iota - autoincrement. A,B,D => 1,2,4
+	A = iota + 1
+	B
+	_
+	D
 )
-*/
 
 var (
 	SiteUrl      string

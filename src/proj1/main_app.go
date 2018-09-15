@@ -19,4 +19,8 @@ func main() {
 
 	wg.Wait()
 
+	print(conf.A)
+	print(conf.B)
+	print(conf.D)
+
 }
