@@ -1,13 +1,14 @@
 package main
 
 import (
+	"fmt"
 	"proj1/conf"
 	"sync"
 )
 
 func main() {
 
-	wgCounter := 10
+	wgCounter := 4
 	var wg sync.WaitGroup // Создание waitgroup. Исходное значение счётчика - 0
 	wg.Add(wgCounter)
 	for i := 0; i < wgCounter; i++ {
@@ -19,8 +20,9 @@ func main() {
 
 	wg.Wait()
 
-	print(conf.A)
-	print(conf.B)
-	print(conf.D)
+	fmt.Println(conf.A)
+	fmt.Println(conf.B)
+	fmt.Println(conf.D)
 
+	conf.Pointer()
 }
