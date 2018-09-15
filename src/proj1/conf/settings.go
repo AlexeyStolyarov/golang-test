@@ -15,6 +15,13 @@ const (
 	D
 )
 
+const (
+	_         = iota
+	KB uint64 = 1 << (10 * iota)
+	MB
+	GB
+)
+
 var (
 	SiteUrl      string
 	AbsolutePath string
@@ -23,18 +30,9 @@ var (
 func init() {
 	SiteUrl = "http://loctalk.net"
 	AbsolutePath = "/path/to/project/"
-	/*
-		mode := os.Getenv("MARTINI_ENV")
 
-		switch mode {
-		case "production":
-			SiteUrl = "http://loctalk.net"
-			AbsolutePath = "/path/to/project/"
-		default:
-			SiteUrl = "http://127.0.0.1"
-			AbsolutePath = "/path/to/project/"
-		} */
-
+	fmt.Println(KB)
+	fmt.Println(MB, GB)
 }
 
 func Myfunc(x int, extWg *sync.WaitGroup) {
