@@ -25,4 +25,6 @@ func main() {
 	fmt.Println(conf.D)
 
 	conf.Pointer()
+
+	conf.Test()
 }

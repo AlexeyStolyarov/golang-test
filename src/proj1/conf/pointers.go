@@ -4,7 +4,7 @@ import "fmt"
 
 func Pointer() {
 	i := 5
-	z := &i
+	var z *int = &i
 
 	fmt.Println("i:=", i)
 
