@@ -20,6 +20,12 @@ func (c *Mytype) add(a Mytype) {
 
 }
 
+// we can use Bigtype.Show()
+type Bigtype struct {
+	Mytype
+	login string
+}
+
 func Test() {
 	fmt.Println("testing stuct")
 	c := Mytype{
