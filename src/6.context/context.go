@@ -30,8 +30,8 @@ func main() {
 	// doesn't work in that way!!
 	// for _, i := range taxi {
 	// fmt.Println(i)
-	for i := range taxi {
-		tt := taxi[i]
+	for _, i := range taxi {
+		tt := i
 
 		wg.Add(1)
 
@@ -72,6 +72,7 @@ func call(ctx context.Context, t string, ordersCh chan string) {
 				ordersCh <- t
 				return
 			}
+			continue
 		}
 
 	}
