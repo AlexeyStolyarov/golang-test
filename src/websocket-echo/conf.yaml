@@ -1,0 +1,10 @@
+ws-server:
+  port: 8080
+  name: test
+  attr_l:
+  - list1
+  - list2
+  attr_m:
+  - name: attr_m_name
+    value: attr_m_value
+  
